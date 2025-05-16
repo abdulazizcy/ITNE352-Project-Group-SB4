@@ -10,7 +10,7 @@ root = gui.Tk()
 root.title("welcome ")
 root.geometry("250x150")
 
-ttk.Label(root, text="Enter Your Name:").grid(row=0, column=0, padx=5, pady=5, sticky="e")
+ttk.Label(root, text="Enter Your UserName:").grid(row=0, column=0, padx=5, pady=5, sticky="e")
 name_entry = ttk.Entry(root)
 name_entry.grid(row=0, column=1, padx=5, pady=5)
 
