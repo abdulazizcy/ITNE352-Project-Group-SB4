@@ -57,49 +57,54 @@ def connection (socka):
                 print(landed)
             # to print the all delayed flights.
             elif request_num =='2':
-                print('clinet name: ',client_name,'\n''requst type :arrived flights')
+                print('clinet name: ',client_name,'\n''requst type :delayed flights')
                 delayed=''  
                 for flights in P1['data']:
                     if (flights['flight_status'=='delay']):
                         delayed+='Flight IATA code: ',flights['flight']['iataNumber']+'\n'               #Returns the IATA number of the flight.
                         delayed+='Departure airport name: ',flights['departure']['airport']+'\n'         #Returns the name of the departure airport.
                         delayed+='Original departure time: ',flights['departure']['scheduled']+'\n'      #Returns the scheduled departure date and time in RFC3339 (ISO8601) format.
-                        delayed+='The estimated time of arrival: ',flights['arrival']['estimated']+'\n'  #Returns the estimated departure date and time in RFC3339 (ISO8601) format.
+                        delayed+='The estimated time of arrival: ',flights['arrival']['estimated']+'\n'  #Returns the estimated arrival date and time in RFC3339 (ISO8601) format.
                         delayed+='Arrival terminal number: ',flights['arrival']['terminal']+'\n'         #Returns the arrival terminal.
                         delayed+='Delay time: ',flights['departure']['delay']+'\n'                       #Returns the departure delay in minutes.
                         delayed+='Arrival gate: ',flights['flight']['gate']+'\n'                         #Returns the arrival gate.
                 print(delayed)
-        
-                
+            # to print Details of a particular flight.
+            elif request_num =='3':
+                print('clinet name: ',client_name,'\n''requst type :particular flights')
+                particular_number=socka.recv(2011).decode('ascii')
+                particular=''  
+                for flights in P1['data']:
+                    if particular_number==flights['flight']['number']:
+                        particular+='Flight IATA code: ',flights['flight']['iataNumber']+'\n'               #Returns the IATA number of the flight.
+                        particular+='Departure airport name: ',flights['departure']['airport']+'\n'         #Returns the name of the departure airport.
+                        particular+='Departure airport gate: ',flights['departure']['gate']+'\n'            #Returns the departure gate.
+                        particular+='Departure airport terminal: ',flights['departure']['terminal']+'\n'    #Returns the departure terminal. 
+                        particular+='arrival airport name: ',flights['arrival']['airport']+'\n'             #Returns the name of the arrival airport.
+                        particular+='arrival airport gate: ',flights['arrival']['gate']+'\n'                #Returns the arrival gate.
+                        particular+='arrival airport terminal: ',flights['arrival']['terminal']+'\n'        #Returns the arrival terminal.
+                        particular+='Flight status: ',flights['flight_status']+'\n'                         #Returns the flight status. Possible values.
+                        particular+='scheduled departure time: ',flights['departure']['scheduled']+'\n'     #Returns the scheduled departure date and time in RFC3339 (ISO8601) format.
+                        particular+='scheduled time of arrival: ',flights['arrival']['scheduled']+'\n'      #Returns the scheduled arrival date and time in RFC3339 (ISO8601) format.       
+                print(particular)
+            # to disconnect the server.
+            elif request_num=='4':
+                print ('<<<<server is disconnecting>>>>')
+                socka.colse()
+                break
             
-            
-            
-            elif request_num =='2':
 
               
-
-              
-               
-
-
-
-
-        
-        
-
-
-
-
 
 
 #creating the socket and asssign IP and port number.
 with socket.socket(socket.AF_INET,socket.SOCK_STREAM) as sock_2:
     sock_2.bind(('127.0.0.1',1024))
     sock_2.listen()
-
-    
-#creating the thread.
-t1=threading.Thread(name='thread 1')
-
-#t1.start()
+    # using while loop to accept muiltple connections from clinets.
+    while True:
+        socka,sockname=sock_2.accept()
+        #creating the thread and start it.
+        t1=threading.Thread(name='thread 1',target=connection, args=(socka,sockname))
+        t1.start()
 
