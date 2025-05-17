@@ -77,7 +77,7 @@ while True:
         gui.messagebox.showinfo("Response", response)
 
     elif request == "quit":
-        socket_c.send(name + " Is quit ".encode("ascii"))
+        socket_c.send(name + " Is quit from program ".encode("ascii"))
         # Close the socket and exit the program
         socket_c.close()
         break
