@@ -19,10 +19,10 @@ button.grid(row=1, column=0, columnspan=2, pady=5)
 
 
 # Create a socket for client side
-socket_c = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+socket_c =socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 
 # Make a connection with the server by using connect methode
-socket_c.connect(("127.0.0.1", 49999))
+socket_c.connect(("127.0.0.1", 55555))
 #get user name from entry box 
 name=name_entry.get()
 # Send the name to the server
