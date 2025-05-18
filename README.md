@@ -36,7 +36,7 @@ In our project we develops and create a client-server system that exchange infor
 
 
 # 2-How to run the system   
-First of all we need to open the terminal and make srue that in the ritght directory as the script it run server script by typing (py server.py) then enter the airport code on another terminal run the client script by typing ( py client.py) in this command the client script will run and it will print message to enter the user nmae of client once entered user name it will print several options to choices from (once the client enter one option of the list ) the server will respond base on that client option choice and it will retrive information from api and send to the client .
+First of all we need to open the terminal and make srue that in the right directory as the script it run server script by typing (py server.py) then enter the airport code on another terminal run the client script by typing ( py client.py) in this command the client script will run and it will print message to enter the user nmae of client once entered user name it will print several options to choices from (once the client enter one option of the list ) the server will respond base on that client option choice and it will retrive information from api and send to the client .
 
 
 # 3-The script 
