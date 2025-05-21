@@ -24,6 +24,9 @@ while True:
         print(response)
         
     elif request == "3":
+        flight_number = input("Enter the flight number: ")
+        # Send the flight number to the server
+        socket_c.send(flight_number.encode("ascii"))
         response = socket_c.recv(4090).decode("ascii")
         print(response)
         

@@ -42,7 +42,7 @@ def connection (socka):
         with open ('PP1.josn','r') as P1:
             P2=json.load(P1)
 
-            #creating if statment to chose the data that user want to see and save thime in new parameters.
+            #creating if statment to chose the data that user want to see and save theme in new parameters.
             # to print the all arived flights.
             if request_num=="1":
                 print('clinet name: ',client_name,'\n''requst type :arrived flights')
