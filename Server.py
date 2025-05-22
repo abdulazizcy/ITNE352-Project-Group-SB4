@@ -40,7 +40,7 @@ def connection (socka,address):
                 print('clinet name: ',client_name,'\n''requst type :arrived flights')
                 fdata=''  
                 for flights in P2['data']:
-                    if (flights['flight_status']=='landed'):
+                    if (flights['flight_status']==['landed']):
                         fdata+='---------------------------------------------------------'+'\n'
                         fdata+='Flight IATA code: '+str(flights['flight']['iata'])+'\n'           #Returns the IATA number of the flight.
                         fdata+='Departure airport name: '+str(flights['departure']['airport'])+'\n'     #Returns the name of the departure airport.
