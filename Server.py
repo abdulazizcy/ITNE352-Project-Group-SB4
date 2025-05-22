@@ -16,10 +16,10 @@ def connection (socka,address):
 
     #creating the parameters to pass thim to api.
     parameters= {
-        'access_key': 'b5839f51c23a1a1f4cd15a24d5bd17bc' ,# api access key from the website acount.
-        'arr_icao':airport_code,
-        'limit':5  #the limit is by defult is 100.
-    }
+         'access_key': '380dab1c6e68d658aced10ef6df17584',
+         'arr_icao':airport_code,
+         'limit':5
+     }
     # svaing the data recievd in file.
     with open ('group_SB4.json','w')as P1:
         # To get the response for the website with the parameters we set. 
@@ -36,11 +36,11 @@ def connection (socka,address):
 
             #creating if statment to chose the data that user want to see and save thime in new parameters.
             # to print the all arived flights.
-            if request_num=="1":
+            if request_num=='1':
                 print('clinet name: ',client_name,'\n''requst type :arrived flights')
                 fdata=''  
                 for flights in P2['data']:
-                    if (flights['flight_status']==['landed']):
+                    if (flights['flight_status']=='landed'):
                         fdata+='---------------------------------------------------------'+'\n'
                         fdata+='Flight IATA code: '+str(flights['flight']['iata'])+'\n'           #Returns the IATA number of the flight.
                         fdata+='Departure airport name: '+str(flights['departure']['airport'])+'\n'     #Returns the name of the departure airport.
