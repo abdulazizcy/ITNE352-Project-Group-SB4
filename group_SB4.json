@@ -1,0 +1,275 @@
+{
+   "pagination": {
+      "limit": 5,
+      "offset": 0,
+      "count": 5,
+      "total": 4815
+   },
+   "data": [
+      {
+         "flight_date": "2025-05-23",
+         "flight_status": "active",
+         "departure": {
+            "airport": "Singapore Changi",
+            "timezone": "Asia/Singapore",
+            "iata": "SIN",
+            "icao": "WSSS",
+            "terminal": "3",
+            "gate": "B4",
+            "delay": 36,
+            "scheduled": "2025-05-23T01:10:00+00:00",
+            "estimated": "2025-05-23T01:10:00+00:00",
+            "actual": "2025-05-23T01:45:00+00:00",
+            "estimated_runway": "2025-05-23T01:45:00+00:00",
+            "actual_runway": "2025-05-23T01:45:00+00:00"
+         },
+         "arrival": {
+            "airport": "Heathrow",
+            "timezone": "Europe/London",
+            "iata": "LHR",
+            "icao": "EGLL",
+            "terminal": "2",
+            "gate": null,
+            "baggage": null,
+            "scheduled": "2025-05-23T07:45:00+00:00",
+            "delay": 34,
+            "estimated": null,
+            "actual": null,
+            "estimated_runway": null,
+            "actual_runway": null
+         },
+         "airline": {
+            "name": "Air Canada",
+            "iata": "AC",
+            "icao": "ACA"
+         },
+         "flight": {
+            "number": "5876",
+            "iata": "AC5876",
+            "icao": "ACA5876",
+            "codeshared": {
+               "airline_name": "singapore airlines",
+               "airline_iata": "sq",
+               "airline_icao": "sia",
+               "flight_number": "306",
+               "flight_iata": "sq306",
+               "flight_icao": "sia306"
+            }
+         },
+         "aircraft": null,
+         "live": null
+      },
+      {
+         "flight_date": "2025-05-23",
+         "flight_status": "active",
+         "departure": {
+            "airport": "Singapore Changi",
+            "timezone": "Asia/Singapore",
+            "iata": "SIN",
+            "icao": "WSSS",
+            "terminal": "3",
+            "gate": "B4",
+            "delay": 36,
+            "scheduled": "2025-05-23T01:10:00+00:00",
+            "estimated": "2025-05-23T01:10:00+00:00",
+            "actual": "2025-05-23T01:45:00+00:00",
+            "estimated_runway": "2025-05-23T01:45:00+00:00",
+            "actual_runway": "2025-05-23T01:45:00+00:00"
+         },
+         "arrival": {
+            "airport": "Heathrow",
+            "timezone": "Europe/London",
+            "iata": "LHR",
+            "icao": "EGLL",
+            "terminal": "2",
+            "gate": null,
+            "baggage": null,
+            "scheduled": "2025-05-23T07:45:00+00:00",
+            "delay": 34,
+            "estimated": null,
+            "actual": null,
+            "estimated_runway": null,
+            "actual_runway": null
+         },
+         "airline": {
+            "name": "Fiji Airways",
+            "iata": "FJ",
+            "icao": "FJI"
+         },
+         "flight": {
+            "number": "5949",
+            "iata": "FJ5949",
+            "icao": "FJI5949",
+            "codeshared": {
+               "airline_name": "singapore airlines",
+               "airline_iata": "sq",
+               "airline_icao": "sia",
+               "flight_number": "306",
+               "flight_iata": "sq306",
+               "flight_icao": "sia306"
+            }
+         },
+         "aircraft": null,
+         "live": null
+      },
+      {
+         "flight_date": "2025-05-23",
+         "flight_status": "active",
+         "departure": {
+            "airport": "Singapore Changi",
+            "timezone": "Asia/Singapore",
+            "iata": "SIN",
+            "icao": "WSSS",
+            "terminal": "3",
+            "gate": "B4",
+            "delay": 36,
+            "scheduled": "2025-05-23T01:10:00+00:00",
+            "estimated": "2025-05-23T01:10:00+00:00",
+            "actual": "2025-05-23T01:45:00+00:00",
+            "estimated_runway": "2025-05-23T01:45:00+00:00",
+            "actual_runway": "2025-05-23T01:45:00+00:00"
+         },
+         "arrival": {
+            "airport": "Heathrow",
+            "timezone": "Europe/London",
+            "iata": "LHR",
+            "icao": "EGLL",
+            "terminal": "2",
+            "gate": null,
+            "baggage": null,
+            "scheduled": "2025-05-23T07:45:00+00:00",
+            "delay": 34,
+            "estimated": null,
+            "actual": null,
+            "estimated_runway": null,
+            "actual_runway": null
+         },
+         "airline": {
+            "name": "Malaysia Airlines",
+            "iata": "MH",
+            "icao": "MAS"
+         },
+         "flight": {
+            "number": "5754",
+            "iata": "MH5754",
+            "icao": "MAS5754",
+            "codeshared": {
+               "airline_name": "singapore airlines",
+               "airline_iata": "sq",
+               "airline_icao": "sia",
+               "flight_number": "306",
+               "flight_iata": "sq306",
+               "flight_icao": "sia306"
+            }
+         },
+         "aircraft": null,
+         "live": null
+      },
+      {
+         "flight_date": "2025-05-23",
+         "flight_status": "active",
+         "departure": {
+            "airport": "Singapore Changi",
+            "timezone": "Asia/Singapore",
+            "iata": "SIN",
+            "icao": "WSSS",
+            "terminal": "3",
+            "gate": "B4",
+            "delay": 36,
+            "scheduled": "2025-05-23T01:10:00+00:00",
+            "estimated": "2025-05-23T01:10:00+00:00",
+            "actual": "2025-05-23T01:45:00+00:00",
+            "estimated_runway": "2025-05-23T01:45:00+00:00",
+            "actual_runway": "2025-05-23T01:45:00+00:00"
+         },
+         "arrival": {
+            "airport": "Heathrow",
+            "timezone": "Europe/London",
+            "iata": "LHR",
+            "icao": "EGLL",
+            "terminal": "2",
+            "gate": null,
+            "baggage": null,
+            "scheduled": "2025-05-23T07:45:00+00:00",
+            "delay": 34,
+            "estimated": null,
+            "actual": null,
+            "estimated_runway": null,
+            "actual_runway": null
+         },
+         "airline": {
+            "name": "Air New Zealand",
+            "iata": "NZ",
+            "icao": "ANZ"
+         },
+         "flight": {
+            "number": "3306",
+            "iata": "NZ3306",
+            "icao": "ANZ3306",
+            "codeshared": {
+               "airline_name": "singapore airlines",
+               "airline_iata": "sq",
+               "airline_icao": "sia",
+               "flight_number": "306",
+               "flight_iata": "sq306",
+               "flight_icao": "sia306"
+            }
+         },
+         "aircraft": null,
+         "live": null
+      },
+      {
+         "flight_date": "2025-05-23",
+         "flight_status": "active",
+         "departure": {
+            "airport": "Singapore Changi",
+            "timezone": "Asia/Singapore",
+            "iata": "SIN",
+            "icao": "WSSS",
+            "terminal": "3",
+            "gate": "B4",
+            "delay": 36,
+            "scheduled": "2025-05-23T01:10:00+00:00",
+            "estimated": "2025-05-23T01:10:00+00:00",
+            "actual": "2025-05-23T01:45:00+00:00",
+            "estimated_runway": "2025-05-23T01:45:00+00:00",
+            "actual_runway": "2025-05-23T01:45:00+00:00"
+         },
+         "arrival": {
+            "airport": "Heathrow",
+            "timezone": "Europe/London",
+            "iata": "LHR",
+            "icao": "EGLL",
+            "terminal": "2",
+            "gate": null,
+            "baggage": null,
+            "scheduled": "2025-05-23T07:45:00+00:00",
+            "delay": 34,
+            "estimated": null,
+            "actual": null,
+            "estimated_runway": null,
+            "actual_runway": null
+         },
+         "airline": {
+            "name": "SAS",
+            "iata": "SK",
+            "icao": "SAS"
+         },
+         "flight": {
+            "number": "8036",
+            "iata": "SK8036",
+            "icao": "SAS8036",
+            "codeshared": {
+               "airline_name": "singapore airlines",
+               "airline_iata": "sq",
+               "airline_icao": "sia",
+               "flight_number": "306",
+               "flight_iata": "sq306",
+               "flight_icao": "sia306"
+            }
+         },
+         "aircraft": null,
+         "live": null
+      }
+   ]
+}
